@@ -5,7 +5,7 @@ function Header() {
     <header className={styles.header}>
       <div className={styles.headerTop}></div>
       <div className={styles.headerBottom}>
-        <img src="https://www.stat.ee/themes/stat/logo.svg" alt="" />
+        <a href='https://www.stat.ee/et'><img src="https://www.stat.ee/themes/stat/logo.svg" className={styles.image} alt="" /></a>
       </div>
     </header>
   );

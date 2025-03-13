@@ -1,26 +1,39 @@
 .header {
-    height: 122px;
+    height: 145px;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
   
     .headerTop {
-      height: 40px;
-      width: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-color: black;
+        height: 40px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: black;
     }
   
     .headerBottom {
-      height: 82px;
-      width: 100%;
-      position: absolute;
-      bottom: 0; // Явно закрепляем снизу внутри .header
-      left: 0;
-      background-color: white;
+        height: 50px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+        padding: 0 56px;
+        display: flex;
+        align-items: flex-end;
+        padding: 10px 0px 30px;
+
+        a {
+            background-color: white;
+        }
+
+        .image {
+            filter: invert(0);
+        }
+
 
         &::before {
             content: "";
@@ -34,4 +47,4 @@
             background-position: 0 0;
         }
     }
-  }
+}
