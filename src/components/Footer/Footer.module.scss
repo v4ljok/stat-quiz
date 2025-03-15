@@ -8,7 +8,7 @@
     overflow: hidden;
     display: flex;
     align-items: center;
-    justify-content: center; // Центрируем контент по горизонтали
+    justify-content: center;
 
     &::before {
         content: "";
@@ -20,7 +20,7 @@
         background: url(https://www.stat.ee/themes/stat/images/pattern-white.svg);
         background-repeat: repeat;
         background-position: 0 0;
-        opacity: 0.3; // Делаем фон менее контрастным
+        opacity: 0.3;
     }
 
     ul {
@@ -28,11 +28,11 @@
         list-style: none; 
         padding: 0;
         margin: 0;
-        z-index: 1; // Убираем список из-под фона
+        z-index: 1;
     }
 
     li {
-        margin: 0 15px; // Добавляем отступы между элементами
+        margin: 0 15px;
         color: white; 
         font-size: 14px;
         font-weight: bold;
@@ -45,5 +45,33 @@
         &:hover {
             text-decoration: underline;
         }
+    }
+}
+
+@media (max-width: 475px) {
+
+    .footer li {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 430px) {
+
+    .footer li {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 405px) {
+
+    .footer li {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .footer li {
+        font-size: 9px;
     }
 }
