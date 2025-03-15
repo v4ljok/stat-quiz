@@ -1,11 +1,12 @@
 import './App.css'
-import { Footer, Header } from './components'
+import { Footer, Header, Quiz } from './components'
 
 function App() {
 
   return (
     <>
       <Header />
+      <Quiz />
       <Footer />
     </>
   )

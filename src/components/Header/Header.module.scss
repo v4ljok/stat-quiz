@@ -1,5 +1,5 @@
 .header {
-    height: 145px;
+    height: 131px;
     width: 100%;
     position: fixed;
     top: 0;
@@ -12,6 +12,11 @@
         top: 0;
         left: 0;
         background-color: black;
+        color: white;
+
+        .rakenduseValik {
+            margin-left: clamp(40px, 15vw, 300px);
+        }
     }
   
     .headerBottom {
@@ -28,10 +33,14 @@
 
         a {
             background-color: white;
+            margin-left: clamp(40px, 15vw, 300px);
+            margin-top: 1px;
         }
 
         .image {
             filter: invert(0);
+            position: absolute;
+            top: 5px;
         }
 
 
