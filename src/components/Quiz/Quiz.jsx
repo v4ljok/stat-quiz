@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Confetti from "react-confetti"; // 🎉 Import confetti
 import styles from "./Quiz.module.scss";
 
 const questions = [
@@ -39,6 +40,9 @@ function Quiz() {
 
   return (
     <div className={styles.quiz}>
+      {/* 🎉 Show confetti only when all answers are correct */}
+      {finished && score === questions.length && <Confetti />}
+
       {finished ? (
         <div className={styles.result}>
           <h2>Tulemus</h2>
