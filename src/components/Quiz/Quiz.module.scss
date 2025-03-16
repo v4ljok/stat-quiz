@@ -9,43 +9,43 @@
     font-family: Arial, sans-serif;
     margin-top: 150px;
 }
-  
+
 h2 {
     font-size: 22px;
     margin-bottom: 20px;
 }
-  
+
 .options {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-top: 10px;
 }
-  
+
 button {
     color: black;
-    border: none;
+    border: solid 1px black;
     padding: 12px;
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
     border-radius: 3px;
     transition: background 0.3s ease-in-out, transform 0.2s;
-    border: solid 1px black;
-  
+
     &:hover {
-      background: #5d5d5f;
-      transform: scale(1.05);
+        background: #5d5d5f;
+        transform: scale(1.05);
     }
-  
+
     &:active {
-      background: #353638;
+        background: #353638;
+        transition: background 0.1s ease-in-out;
     }
 }
-  
+
 .result {
     margin-top: 20px;
     font-size: 18px;
     font-weight: bold;
     color: #333;
-}  
+}
