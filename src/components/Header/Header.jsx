@@ -54,10 +54,10 @@ function Header() {
         </div>
 
         <div className={styles.right}>
-          <a href="#">{t("accessibility")}</a>
-          <a href="#">{t("help")}</a>
-          <a href="#">{t("contacts")}</a>
-          <a href="#">{t("login")}</a>
+          <a href="https://stat.ee/et/juurdepaasetavus">{t("accessibility")}</a>
+          <a href="https://stat.ee/et/abi">{t("help")}</a>
+          <a href="https://stat.ee/et/statistikaamet/kontakt">{t("contacts")}</a>
+          <a href="https://estat.stat.ee/">{t("login")}</a>
 
           <span className={styles.lang}>
             <span
