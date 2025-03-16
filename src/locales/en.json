@@ -1,0 +1,42 @@
+{
+    "title": "Quiz",
+    "label": "Statistics Estonia",
+    "home": "Webpage",
+    "database": "Statistical database",
+    "estat": "eSTAT",
+    "classification": "Classifications portal",
+    "salary": "Earnings application",
+    "dashboards": "Dashboards",
+    "trade": "Foreign trade application",
+    "tamm": "Tree of Truth",
+    "names": "Names Statistics",
+    "accessibility": "Accessibility",
+    "help": "Help",
+    "contacts": "Contacts",
+    "login": "Go to eSTAT",
+    "language": "ENG",
+    "questions": [
+        {
+          "question": "What is the capital of Estonia?",
+          "options": ["Tallinn", "Tartu", "Narva"],
+          "correct": "Tallinn"
+        },
+        {
+          "question": "Which sea surrounds Estonia?",
+          "options": ["Atlantic Ocean", "Baltic Sea", "Mediterranean Sea"],
+          "correct": "Baltic Sea"
+        },
+        {
+          "question": "What is the national bird of Estonia?",
+          "options": ["Magpie", "Barn Swallow", "Eagle"],
+          "correct": "Barn Swallow"
+        }
+      ],
+      "result_title": "Result",
+      "result_text": "You got {{score}} out of {{total}} correct!",
+      "footer": {
+        "contacts": "Contacts",
+        "cookies": "Cookie Settings",
+        "license": "Statistics Estonia open data is shared under a Creative Commons (CC) BY-SA 4.0 license."
+      }
+}  

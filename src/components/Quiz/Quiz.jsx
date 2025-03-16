@@ -1,29 +1,15 @@
 import { useState } from "react";
-import Confetti from "react-confetti"; // 🎉 Import confetti
+import { useTranslation } from "react-i18next";
+import Confetti from "react-confetti";
 import styles from "./Quiz.module.scss";
 
-const questions = [
-  {
-    question: "Mis on Eesti pealinn?",
-    options: ["Tallinn", "Tartu", "Narva"],
-    correct: "Tallinn",
-  },
-  {
-    question: "Milline meri ümbritseb Eestit?",
-    options: ["Atlandi ookean", "Läänemeri", "Vahemeri"],
-    correct: "Läänemeri",
-  },
-  {
-    question: "Mis on Eesti rahvuslind?",
-    options: ["Harakas", "Suitsupääsuke", "Kotkas"],
-    correct: "Suitsupääsuke",
-  },
-];
-
 function Quiz() {
+  const { t } = useTranslation();
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [finished, setFinished] = useState(false);
+
+  const questions = t("questions", { returnObjects: true });
 
   const handleAnswer = (answer) => {
     if (answer === questions[currentQuestion].correct) {
@@ -40,13 +26,12 @@ function Quiz() {
 
   return (
     <div className={styles.quiz}>
-      {/* 🎉 Show confetti only when all answers are correct */}
       {finished && score === questions.length && <Confetti />}
 
       {finished ? (
         <div className={styles.result}>
-          <h2>Tulemus</h2>
-          <p>Sa said {score} / {questions.length} õigesti!</p>
+          <h2>{t("result_title")}</h2>
+          <p>{t("result_text", { score, total: questions.length })}</p>
         </div>
       ) : (
         <div>

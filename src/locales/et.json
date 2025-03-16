@@ -1,0 +1,42 @@
+{
+    "title": "Viktoriin",
+    "label": "Statistikaamet",
+    "home": "Koduleht",
+    "database": "Statistika andmebaas",
+    "estat": "eSTAT",
+    "classification": "Klassifikaatorite portaal",
+    "salary": "Palgarakendus",
+    "dashboards": "Juhtimislauad",
+    "trade": "Väliskaubanduse rakendus",
+    "tamm": "Töetamm",
+    "names": "Nimede statistika rakendus",
+    "accessibility": "Juurdepääsetavus",
+    "help": "Abi",
+    "contacts": "Kontaktid",
+    "login": "Sisene eSTATi",
+    "language": "EST",
+    "questions": [
+        {
+          "question": "Mis on Eesti pealinn?",
+          "options": ["Tallinn", "Tartu", "Narva"],
+          "correct": "Tallinn"
+        },
+        {
+          "question": "Milline meri ümbritseb Eestit?",
+          "options": ["Atlandi ookean", "Läänemeri", "Vahemeri"],
+          "correct": "Läänemeri"
+        },
+        {
+          "question": "Mis on Eesti rahvuslind?",
+          "options": ["Harakas", "Suitsupääsuke", "Kotkas"],
+          "correct": "Suitsupääsuke"
+        }
+      ],
+      "result_title": "Tulemus",
+      "result_text": "Sa said {{score}} / {{total}} õigesti!",
+      "footer": {
+        "contacts": "Kontaktid",
+        "cookies": "Küpsiste sätted",
+        "license": "Statistikaameti avandmed on jagatavad Creative Commons (CC) litsentsiga BY-SA 4.0."
+      }
+}

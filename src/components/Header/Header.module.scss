@@ -146,3 +146,25 @@
 .dropdown a:visited {
     color: black;
 }
+
+.lang {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+    transition: color 0.3s ease-in-out;
+}
+
+.activeLang {
+    font-weight: bold;
+    color: white;
+}
+
+.inactiveLang {
+    color: gray;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.inactiveLang:hover {
+    color: white;
+}
