@@ -4,56 +4,111 @@
     position: fixed;
     top: 0;
     left: 0;
-  
-    .headerTop {
-        height: 40px;
-        width: 100%;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    z-index: 1000;
+}
+
+.headerTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    height: 40px;
+}
+
+.left {
+    font-weight: bold;
+    margin-left: clamp(40px, 15vw, 300px);
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background: white;
+    color: black;
+    width: 260px;
+    list-style: none;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
+
+.dropdown li {
+    padding: 12px 15px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown li:last-child {
+    border-bottom: none;
+}
+
+.dropdown li:hover {
+    background-color: #f1f1f1;
+}
+
+.center {
+    display: flex;
+    gap: 15px;
+    font-size: 16px;
+}
+
+.right {
+    display: flex;
+    gap: 15px;
+}
+
+.right a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.lang {
+    font-weight: bold;
+}
+
+.headerBottom {
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    padding: 10px 0px 30px;
+    display: flex;
+    align-items: flex-end;
+
+    a {
+        background-color: white;
+        margin-left: clamp(40px, 15vw, 300px);
+    }
+
+    .image {
+        filter: invert(0);
+        position: absolute;
+        top: 5px;
+    }
+
+    &::before {
+        content: "";
         position: absolute;
         top: 0;
         left: 0;
-        background-color: black;
-        color: white;
-
-        .rakenduseValik {
-            margin-left: clamp(40px, 15vw, 300px);
-        }
-    }
-  
-    .headerBottom {
-        height: 50px;
         width: 100%;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        background-color: white;
-        padding: 0 56px;
-        display: flex;
-        align-items: flex-end;
-        padding: 10px 0px 30px;
-
-        a {
-            background-color: white;
-            margin-left: clamp(40px, 15vw, 300px);
-            margin-top: 1px;
-        }
-
-        .image {
-            filter: invert(0);
-            position: absolute;
-            top: 5px;
-        }
-
-
-        &::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url(https://www.stat.ee/themes/stat/images/pattern.svg);
-            background-repeat: repeat;
-            background-position: 0 0;
-        }
+        height: 100%;
+        background: url(https://www.stat.ee/themes/stat/images/pattern.svg);
+        background-repeat: repeat;
+        background-position: 0 0;
     }
 }
