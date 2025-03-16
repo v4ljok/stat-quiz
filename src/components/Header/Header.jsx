@@ -32,15 +32,15 @@ function Header() {
           </p>
           {dropdownOpen && (
             <ul className={styles.dropdown}>
-              <li><a href="https://stat.ee/et">{t("home")}</a></li>
-              <li><a href="https://andmed.stat.ee/et">{t("database")}</a></li>
-              <li><a href="https://estat.stat.ee/sa-auth/login?language=et">{t("estat")}</a></li>
-              <li><a href="https://klassifikaatorid.stat.ee/">{t("classification")}</a></li>
-              <li><a href="https://palgad.stat.ee/">{t("salary")}</a></li>
-              <li><a href="https://juhtimislauad.stat.ee/et">{t("dashboards")}</a></li>
-              <li><a href="https://valiskaubandus.stat.ee/profile/country/ee/?locale=et">{t("trade")}</a></li>
-              <li><a href="https://tamm.stat.ee/?lang=et">{t("tamm")}</a></li>
-              <li><a href="https://www.stat.ee/nimed/">{t("names")}</a></li>
+              <a href="https://stat.ee/et"><li>{t("home")}</li></a>
+              <a href="https://andmed.stat.ee/et"><li>{t("database")}</li></a>
+              <a href="https://estat.stat.ee/sa-auth/login?language=et"><li>{t("estat")}</li></a>
+              <a href="https://klassifikaatorid.stat.ee/"><li>{t("classification")}</li></a>
+              <a href="https://palgad.stat.ee/"><li>{t("salary")}</li></a>
+              <a href="https://juhtimislauad.stat.ee/et"><li>{t("dashboards")}</li></a>
+              <a href="https://valiskaubandus.stat.ee/profile/country/ee/?locale=et"><li>{t("trade")}</li></a>
+              <a href="https://tamm.stat.ee/?lang=et"><li>{t("tamm")}</li></a>
+              <a href="https://www.stat.ee/nimed/"><li>{t("names")}</li></a>
             </ul>
           )}
         </div>
