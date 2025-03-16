@@ -65,6 +65,7 @@
 .right {
     display: flex;
     gap: 15px;
+    align-items: center;
     margin-right: clamp(40px, 15vw, 300px);
 }
 
