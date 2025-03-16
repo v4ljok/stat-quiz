@@ -40,11 +40,11 @@ function Header() {
         </div>
 
         <div className={styles.center}>
-          <FaFacebookF />
-          <FaXTwitter />
-          <FaLinkedinIn />
-          <FaYoutube />
-          <FaInstagram />
+          <a href="https://et-ee.facebook.com/Statistikaamet"><FaFacebookF /></a>
+          <a href="https://x.com/eestistatistika"><FaXTwitter /></a>
+          <a href="https://www.linkedin.com/company/statistikaamet-statistics-estonia/"><FaLinkedinIn /></a>
+          <a href="https://www.youtube.com/user/Statistikaamet/featured"><FaYoutube /></a>
+          <a href="https://www.instagram.com/eesti_statistika/"><FaInstagram /></a>
         </div>
 
         <div className={styles.right}>

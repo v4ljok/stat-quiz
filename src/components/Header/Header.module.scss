@@ -14,7 +14,6 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    // padding: 8px 20px;
     font-size: 14px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     height: 40px;
@@ -66,6 +65,7 @@
 .right {
     display: flex;
     gap: 15px;
+    margin-right: 15px;
 }
 
 .right a {
@@ -111,4 +111,25 @@
         background-repeat: repeat;
         background-position: 0 0;
     }
+}
+
+@media (max-width: 1280px) {
+    .center {
+        display: none;
+    }
+}
+
+@media (max-width: 1025px) {
+    .right a {
+        display: none;
+    }
+}
+
+.center a {
+    color: white;
+    text-decoration: none;
+}
+
+.center a:hover {
+    color: #ccc;
 }
