@@ -55,12 +55,12 @@
     }
 }
 
-@media (max-width: 430px) {
+// @media (max-width: 430px) {
 
-    .footer li {
-        font-size: 11px;
-    }
-}
+//     .footer li {
+//         font-size: 11px;
+//     }
+// }
 
 /* @media (max-width: 405px) {
 
@@ -90,7 +90,7 @@
     }
 } */
 
-@media (max-width: 405px) {
+@media (max-width: 430px) {
     ul li:first-child {
         display: none;
     }
