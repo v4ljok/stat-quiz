@@ -49,14 +49,13 @@
 }
 
 @media (max-width: 475px) {
-
     .footer li {
         font-size: 12px;
     }
 }
 
 @media (max-width: 430px) {
-    ul li:first-child {
+    .footer ul li:first-child {
         display: none;
     }
 }
